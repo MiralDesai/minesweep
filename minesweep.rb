@@ -10,8 +10,10 @@ class Minesweep
   end
 
   def play
-    until status != 'in_progress' do
-      puts 'Select coordinates: '
+    loop do
+      puts 'Pick a move: '
+      stuff = STDIN.gets.chomp
+      puts stuff
       # move(column: gets.chomp)
     end
   end
